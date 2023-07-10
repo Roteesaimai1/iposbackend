@@ -1,4 +1,4 @@
-const express = require('express')
+/* const express = require('express')
 const app = express();
 const path = require('./api')
 const moment = require('moment')
@@ -15,4 +15,4 @@ app.use('/api', path)
 app.listen(port,() => { 
     console.log(`Server run on Port ${port}`);
     console.log(`Log: ${moment().format('MMMM Do YYYY, h:mm:ss a')}`);
-})
+}) */
