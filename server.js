@@ -7,6 +7,7 @@ global.Menu = require('./api/models/menuModel');
 global.User = require('./api/models/userModel');
 const routes = require('./api/routes/menuRoutes');
 const UserRoutes = require('./api/routes/userRoutes');
+const BillRoutes = require('./api/routes/billRoutes')
 
 mongoose.connect(
   'mongodb://127.0.0.1:27017/iposdb',
@@ -20,6 +21,7 @@ app.use(bodyParser.json());
 
 routes(app);
 UserRoutes(app);
+BillRoutes(app);
 app.listen(port);
 
 app.use((req, res) => {
