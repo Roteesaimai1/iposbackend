@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 global.Menu = require('./api/models/menuModel');
 global.User = require('./api/models/userModel');
+global.Bill = require('./api/models/billModel');
 const routes = require('./api/routes/menuRoutes');
 const UserRoutes = require('./api/routes/userRoutes');
 const BillRoutes = require('./api/routes/billRoutes')
